@@ -66,7 +66,6 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 	
 	HtmlTag stile = new HtmlTag("style");
 	stile.setContent("h1{color:blue;} h2{color:red;}");
-	stile.Attributes.put("href", "ciao");
 	
 	HtmlTag tagNome = new HtmlTag("h1");
 	tagNome.setContent(nome);
