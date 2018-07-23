@@ -11,7 +11,6 @@ public class DbConnection {
 	//RestService a = new RestService();
 
 	public void datidb(String nome, String cognome) throws SQLException{
-
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (ClassNotFoundException e) {
@@ -25,12 +24,12 @@ public class DbConnection {
 		
 		stm.executeUpdate("INSERT INTO prova(nome,cognome) VALUES ('"+nome+"','"+cognome+"')");
 		ResultSet rs = stm.executeQuery("select * from prova order by id");
+	
 		
-				
 		while (rs.next()) {
 			String usern=rs.getString("nome");
 			String userc=rs.getString("cognome");
-			System.out.println(usern+userc);
+			System.out.println(usern+" "+userc);
 		}
 
 
