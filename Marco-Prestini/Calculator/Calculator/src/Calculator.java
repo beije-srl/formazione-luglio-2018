@@ -42,7 +42,7 @@ public class Calculator {
 			break;
 
 		case "r":
-			System.out.println("Risultato:" + Math.pow(num2, 1/num1));
+			System.out.println("Risultato:" + Math.pow(num2, 1 / num1));
 			break;
 
 		default:
